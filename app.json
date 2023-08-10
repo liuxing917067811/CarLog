@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/carlog/carlog",
+    "pages/carMessage/carMessage"
   ],
   "window": {
-    "defaultTitle": "My App"
+    "defaultTitle": "车辆查询"
   }
 }

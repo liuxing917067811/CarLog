@@ -1,0 +1,101 @@
+<template name="Table">
+  <scroll-view scroll-y>
+    <view>
+      <view a:if={{data}} class="a-list-items">
+          <block a:for={{data}}>
+            <view class="form-line" />
+  
+            <view class="table">
+
+                <view class="tbody flex">
+                    <view  class="tr flex" >
+                      <view  class="td" style="width: 40%"> 
+                        <view class="td-item" >
+                            ID
+                        </view>
+              
+                      </view>
+
+                      <view  class="td" style="width: 60%"> 
+                        <view class="td-item" >
+                          {{item.id}}
+                        </view>
+                      </view>
+                    </view>
+
+                    <view  class="tr flex" >
+                        <view  class="td" style="width: 40%"> 
+                          <view class="td-item" >
+                              车牌号
+                          </view>
+                
+                        </view>
+      
+                        <view  class="td" style="width: 60%"> 
+                          <view class="td-item" >
+                            {{item.carNo}}
+                          </view>
+                        </view>
+                    </view>
+
+                    <view class="tr flex" >
+                          <view  class="td" style="width: 40%"> 
+                            <view class="td-item" >
+                                司机
+                            </view>
+                  
+                          </view>
+        
+                          <view  class="td" style="width: 60%"> 
+                            <view class="td-item" >
+                              {{item.driver}}
+                            </view>
+                          </view>
+                    </view>
+
+                    <view a:if={{item.fDate}} class="tr flex" >
+                        <view  class="td" style="width: 40%"> 
+                          <view class="td-item" >
+                              时间
+                          </view>
+                
+                        </view>
+      
+                        <view  class="td" style="width: 60%"> 
+                          <view class="td-item" >
+                            {{item.fDate}}
+                          </view>
+                        </view>
+                    </view>
+
+                    
+                    <view a:if={{item.fStatus}} class="tr flex" >
+                      <view  class="td" style="width: 40%"> 
+                        <view class="td-item" >
+                              进出
+                        </view>
+              
+                      </view>
+    
+                      <view  class="td" style="width: 60%"> 
+                        <view class="td-item" >
+                          {{item.fStatus}}
+                        </view>
+                      </view>
+                  </view>
+
+  
+                
+              </view>
+              
+          
+            </view>
+
+            <view class="form-line" />
+
+          </block>
+      </view>
+
+    </view>
+  </scroll-view>
+</template>
