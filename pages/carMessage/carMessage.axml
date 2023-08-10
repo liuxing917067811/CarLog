@@ -15,14 +15,14 @@
   <scroll-view scroll-y="{{true}}" class="a-dropdown-contents">
       <view hidden = "{{value_hidden}}" > 
           <view class="form-row">
-            <view class="form-row-label">车牌号：</view>
+            <view class="form-row-label">车牌号</view>
             <view class="form-row-content">
               <input class="input" maxlength="15" placeholder="车牌号" value="{{value_carno}}" onInput="handle_carno"/>
             </view>
           </view>
           <view class="form-line" />
           <view class="form-row">
-            <view class="form-row-label">司机：</view>
+            <view class="form-row-label">司机</view>
             <view class="form-row-content">
               <input class="input" maxlength="15" placeholder="司机" value="{{value_driver}}" onInput="handle_driver"/>
             </view>

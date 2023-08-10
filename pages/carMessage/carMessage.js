@@ -5,7 +5,7 @@ Page({
      tabelData: {
        data: []
  },
- pageindex: 0,
+ pageindex: 1,
  pagesize: 20,
  value_carno: "",
  value_driver: "",
@@ -17,7 +17,7 @@ Page({
 onLoad() {
 
   this.setData({
-    pageindex: 0,
+    pageindex: 1,
     value_hidden: true,
 
   });
