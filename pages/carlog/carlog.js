@@ -79,7 +79,7 @@ const res = await dd.httpRequest({
 dd.hideLoading();
 
 //绑定数据
-if(this.data.pageindex==0){
+if(this.data.pageindex <= 1){
 
    this.setData(
      {
@@ -142,7 +142,7 @@ if(this.data.value_hidden ){
 }else  {
  this.setData({
    value_hidden: true,
-   pageindex: 0,
+   pageindex: 1,
  });
  this.getdata();
 
