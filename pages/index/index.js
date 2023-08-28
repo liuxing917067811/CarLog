@@ -37,6 +37,12 @@ Page({
         entitle: 'Interface',
         page: '../carMessage/carMessage'
       },
+      {
+        icon: '/image/facelog.png',
+        title: '门禁进出记录',
+        entitle: 'Interface',
+        page: '../facelog/facelog'
+      },
 
 
       ],

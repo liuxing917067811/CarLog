@@ -23,7 +23,7 @@
                       </view>
                     </view>
 
-                    <view  class="tr flex" >
+                    <view a:if="{{ item.carNo }}"  class="tr flex" >
                         <view  class="td" style="width: 40%"> 
                           <view class="td-item" >
                               车牌号
@@ -38,7 +38,7 @@
                         </view>
                     </view>
 
-                    <view class="tr flex" >
+                    <view a:if={{item.driver}} class="tr flex" >
                           <view  class="td" style="width: 40%"> 
                             <view class="td-item" >
                                 司机
@@ -52,6 +52,21 @@
                             </view>
                           </view>
                     </view>
+
+                    <view a:if={{item.name}} class="tr flex" >
+                      <view  class="td" style="width: 40%"> 
+                        <view class="td-item" >
+                            姓名
+                        </view>
+              
+                      </view>
+    
+                      <view  class="td" style="width: 60%"> 
+                        <view class="td-item" >
+                          {{item.name}}
+                        </view>
+                      </view>
+                </view>
 
                     <view a:if={{item.fDate}} class="tr flex" >
                         <view  class="td" style="width: 40%"> 

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/carlog/carlog",
-    "pages/carMessage/carMessage"
+    "pages/carMessage/carMessage",
+    "pages/facelog/facelog"
   ],
   "window": {
     "defaultTitle": "车辆查询"

@@ -1,0 +1,39 @@
+<import src="../components/table/table.axml" />
+
+<view>
+  <!-- 搜索 -->
+  <view class=".a-dropdown-wrapper"> 
+      <view id="a-dropdown-nav" class="a-dropdown-nav" >
+        <view class="a-dropdown-nav-item" hover-class="a-dropdown-nav-item-hover" onTap="_onNavItemTap">
+          <text>搜索</text>
+        </view>
+        
+        <view class="triangle"></view>
+      </view>
+  </view>
+
+  <scroll-view scroll-y="{{true}}" class="a-dropdown-contents">
+      <view hidden = "{{value_hidden}}" > 
+          <view class="form-row">
+            <view class="form-row-label">姓名:</view>
+            <view class="form-row-content">
+              <input class="input" maxlength="15" placeholder="姓名" value="{{value_name}}" onInput="handle_name"/>
+            </view>
+          </view>
+          <!-- <view class="form-line" />
+          <view class="form-row">
+            <view class="form-row-label">司机</view>
+            <view class="form-row-content">
+              <input class="input" maxlength="15" placeholder="司机" value="{{value_driver}}" onInput="handle_driver"/>
+            </view>
+          </view> -->
+
+          <view class="form-line" />
+
+      </view>
+  </scroll-view>
+<!-- 数据 -->
+  <template is="Table" data={{...tabelData}} > </template>
+
+
+</view>
